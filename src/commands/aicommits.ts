@@ -65,6 +65,7 @@ export default async (
 		let messages: string[];
 		try {
 			messages = await generateCommitMessage(
+				config.openai_url,
 				config.OPENAI_KEY,
 				config.model,
 				config.locale,
